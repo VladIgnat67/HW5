@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    
+    font-weight: 400;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+@media(max-width:1320px){
+    .container{
+        width:100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+}
+@media(max-width:680px){
+    .nav{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.menu{
+    display: flex;
+    margin: 40px 0;
+    gap: 30px;
+}
+@media(max-width:680px){
+    .menu-item{
+        font-size: 15px;
+    }
+}
+.menu-item{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+.menu-item:last-child{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 125px 40px;
+}
+button{
+    margin: 10px;
+    border-radius: 30px;
+    border: none;
+    width: 75px;
+    height: 30px;
+    transition: 1;
+}
+.card {
+    width: 300px;
+    height: 420px;
+}
+.card-img{
+    width: 250px;
+    height: 400px;
+}
+.card-title {
+    font-family: 'Lugrasimo';
+    margin: 0 2.75px;
+    font-size: 25px;
+}
+
+.card-year{
+    font-weight: 700;
+    font-style: italic;
+    margin: 5px 0;
+}
+.card-genre{
+    font-size: 20px;
+}
+.dark{
+    background-color: black;
+    color: grey;
+}
